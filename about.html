@@ -1,2 +1,151 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>About Us | New Amsterdam Secondary School</title><meta name="description" content="Learn about New Amsterdam Secondary School."><link rel="stylesheet" href="styles.css"></head><body><a class="skip" href="#main">Skip to content</a><div class="utility"><div class="container"><span>Official Website of New Amsterdam Secondary School</span><span>Progress Through Co-Operation</span></div></div>
-<header class="site-header"><div class="container brand-row"><a class="brand" href="index.html"><img src="nass-crest.png" alt="NASS crest"><span><span class="brand-name">New Amsterdam Secondary School</span><span class="brand-tag">The MultiVerse of Opportunities</span></span></a><button class="nav-toggle" aria-expanded="false">Menu</button><nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><div class="dropdown"><button class="dropbtn">Academics ▾</button><div class="dropdown-menu"><a href="academics.html#csec">CSEC</a><a href="academics.html#cape">CAPE</a><a href="academics.html#cvq">CVQ</a><a href="academics.html#ccslc">CCSLC</a></div></div><a href="departments.html">Departments</a><div class="dropdown"><button class="dropbtn">Admissions ▾</button><div class="dropdown-menu"><a href="admissions.html">Admissions Overview</a><a href="grade7-admissions.html">Grade 7 Admissions</a><a href="cape-admissions.html">CAPE Admissions</a></div></div><a href="student-life.html">Student Life</a><a href="news.html">News</a><a href="contact.html">Contact</a></nav></div></header><main id="main"><section class="page-hero"><div class="container"><div class="breadcrumbs">Home / About</div><h1>About Our School</h1><p>Discover the identity, values and educational purpose of New Amsterdam Secondary School.</p></div></section><section><div class="container grid-2"><div><div class="section-head left"><h2>Welcome to NASS</h2></div><p>New Amsterdam Secondary School serves students through a broad programme of academic, technical, vocational and co-curricular education. The school promotes high expectations, disciplined effort, mutual respect and meaningful cooperation.</p><p>Our community is guided by the belief that every learner should have access to opportunities that develop knowledge, skills, character and confidence.</p></div><div class="card accent-card"><h3>The MultiVerse of Opportunities</h3><p>This identity reflects the many pathways available to students: academics, technical education, vocational training, sport, leadership, agriculture, culture and service.</p></div></div></section><section style="background:#fff"><div class="container grid-3"><div class="card"><h3>Mission</h3><p>To provide a supportive, inclusive and high-quality education that prepares students for further study, employment, entrepreneurship and responsible citizenship.</p></div><div class="card"><h3>Vision</h3><p>To be a leading secondary school recognised for academic excellence, innovation, technical competence, strong values and community impact.</p></div><div class="card"><h3>Motto</h3><p><strong>Progress Through Co-Operation</strong></p><p>Advancement is achieved when the entire school community works together.</p></div></div></section></main><footer class="footer"><div class="container"><div class="footer-grid"><div><img src="nass-crest.png" alt="NASS crest" style="width:88px;background:white;border-radius:50%;padding:4px"><h3>New Amsterdam Secondary School</h3><p>The MultiVerse of Opportunities<br>Progress Through Co-Operation</p></div><div><h3>Quick Links</h3><a href="about.html">About Us</a><a href="academics.html">Academics</a><a href="departments.html">Departments</a><a href="student-life.html">Student Life</a></div><div><h3>Admissions</h3><a href="grade7-admissions.html">Grade 7 Admissions</a><a href="cape-admissions.html">CAPE Admissions</a><a href="https://script.google.com/macros/s/AKfycbzB4xOwSAQT3T6wn8Ftz0v46wFkwLbsAv4fvyOl8fUjMCfb0Seq74mv4WgK6Ysi33HO/exec" target="_blank" rel="noopener">Apply Online</a></div><div><h3>Contact</h3><p>New Amsterdam, Berbice<br>Region Six, Guyana</p><a href="contact.html">Contact the School</a></div></div><div class="footer-bottom">© <span data-year></span> New Amsterdam Secondary School. All rights reserved.</div></div></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | New Amsterdam Secondary School</title>
+  <meta name="description" content="Learn about New Amsterdam Secondary School.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .brand-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0;line-height:1.15}
+    .brand-name,.brand-tag{display:block;width:100%}
+    .brand-tag{margin-top:5px}
+    .welcome-layout,.about-grid{align-items:start}
+    .governance-section{background:#fff}
+    .governance-layout{display:grid;grid-template-columns:340px minmax(0,1fr);gap:30px;align-items:start}
+    .chairman-card,.governance-text{align-self:start;height:auto;min-width:0}
+    .chairman-photo{width:100%;height:410px;object-fit:cover;object-position:center top;display:block;border-radius:14px;margin-bottom:20px}
+    .school-song p{margin:0 0 20px}
+    .school-song h4{margin:8px 0 10px;color:var(--purple-dark)}
+    .song-credit{margin-top:24px;color:var(--muted);font-style:italic;font-weight:700}
+    .house-card img{width:100%;display:block;margin-top:16px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+    .house-colours{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:18px}
+    .house-colours span{white-space:nowrap;color:var(--muted)}
+    @media(max-width:760px){.governance-layout{grid-template-columns:1fr}.chairman-photo{height:auto;aspect-ratio:4/5}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility"><div class="container"><span>Official Website of New Amsterdam Secondary School</span><span>Progress Through Co-Operation</span></div></div>
+  <header class="site-header">
+    <div class="container brand-row">
+      <a class="brand" href="index.html"><img src="nass-crest.png" alt="New Amsterdam Secondary School crest"><span class="brand-copy"><span class="brand-name">New Amsterdam Secondary School</span><span class="brand-tag">The MultiVerse of Opportunities</span></span></a>
+      <button class="nav-toggle" aria-expanded="false">Menu</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a>
+        <div class="dropdown"><button class="dropbtn">Academics ▾</button><div class="dropdown-menu"><a href="academics.html#csec">CSEC</a><a href="academics.html#cape">CAPE</a><a href="academics.html#cvq">CVQ</a><a href="academics.html#ccslc">CCSLC</a></div></div>
+        <a href="departments.html">Departments</a>
+        <div class="dropdown"><button class="dropbtn">Admissions ▾</button><div class="dropdown-menu"><a href="admissions.html">Admissions Overview</a><a href="grade7-admissions.html">Grade 7 Admissions</a><a href="cape-admissions.html">CAPE Admissions</a></div></div>
+        <a href="student-life.html">Student Life</a> <a href="resources.html">
+                    Resources
+                </a> <a href="news.html">News</a><a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero"><div class="container"><div class="breadcrumbs">Home / About</div><h1>About Our School</h1><p>Discover the history, identity, values, leadership and educational purpose of New Amsterdam Secondary School.</p></div></section>
+
+    <section class="welcome-section">
+      <div class="container grid-2 welcome-layout">
+        <div>
+          <div class="section-head left"><h2>Welcome to NASS</h2></div>
+          <p>New Amsterdam Secondary School serves students through a broad programme of academic, technical, vocational and co-curricular education. The school promotes high expectations, disciplined effort, mutual respect and meaningful cooperation.</p>
+          <p>Our community is guided by the belief that every learner should have access to opportunities that develop knowledge, skills, character and confidence.</p>
+        </div>
+        <div class="card accent-card">
+          <h3>The MultiVerse of Opportunities</h3>
+          <p>This identity reflects the school's commitment to providing every student with access to a diverse range of pathways for personal, academic and professional growth.</p>
+          <p>It represents an educational environment where students are empowered to discover and develop their unique talents, interests and aspirations through academic excellence, technical and vocational education and training, leadership, co-curricular and extra-curricular activities, cultural engagement, community service, entrepreneurship and innovation.</p>
+          <p>Together, these opportunities prepare students to become well-rounded citizens equipped to succeed in an ever-evolving world.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="governance-section">
+      <div class="container">
+        <div class="section-head"><h2>School Governance</h2><p>Committed to excellence through strong leadership and responsible governance.</p></div>
+        <div class="governance-layout">
+          <div class="card chairman-card">
+            <img src="chairman.png" alt="Mr. Rafeek Kassim, Chairman of the Board of Governors" class="chairman-photo">
+            <h3>Mr. Rafeek Kassim</h3>
+            <p><strong>Chairman</strong><br>Board of Governors</p>
+          </div>
+          <div class="card accent-card governance-text">
+            <h3>Board of Governors</h3>
+            <p>New Amsterdam Secondary School is governed by a Board of Governors which provides strategic leadership, policy direction and oversight for the continued growth and development of the institution.</p>
+            <p>Working in partnership with the Principal, staff, parents, alumni, the Ministry of Education and the wider community, the Board promotes accountability, innovation and educational excellence.</p>
+            <p>Through collaborative leadership and responsible governance, the Board remains committed to advancing the school's vision, strengthening the institution and supporting student success.</p>
+<p>
+Through collaborative leadership and responsible
+governance, the Board remains committed to advancing
+the school's vision, strengthening the institution and
+supporting student success.
+</p>
+<hr style="margin:30px 0;">
+<img src="board-members.jpg"
+     alt="Board of Governors"
+     class="board-photo">
+<p style="text-align:center; margin-top:15px;">
+<strong>Board of Governors</strong><br>
+2026–2028
+</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container about-cards">
+        <div class="card">
+          <h3>Brief History</h3>
+          <p>New Amsterdam Secondary School (Multilateral) is a government secondary institution offering a comprehensive multilateral curriculum. The New Amsterdam Multilateral School (N.A.M.S.) was opened on 15 September 1975 with an enrolment of 181 students.</p>
+          <p>The members of the administration were Joyce A. Thomas, Headmistress; Mr. Reuben Dash, Deputy Headmaster; Ms. Beverly Headly, Senior Mistress; and Mr. Michael Rambali, Senior Master. The foundation staff consisted of six teachers, one in each of the following areas: English, Social Studies, Home Economics, Integrated Science, Spanish and Agricultural Science.</p>
+          <p>On 13 October 1975, a transfer of 550 students took place from Berbice High School to N.A.M.S. By the end of the 1975–1976 school year, the number of students on roll was 861. During the following school year, enrolment increased to 1,015 students.</p>
+          <p>The school's crest was introduced on 6 February 1976, and its motto, “Progress Through Co-Operation,” was approved on 19 November 1977. The name of the school was changed from New Amsterdam Government Secondary School to New Amsterdam Multilateral School on 1 September 1978.</p>
+          <p>On 27 January 1979, the school's Parent-Teacher Association was inaugurated under the name New Amsterdam Multilateral School and Community Council.</p>
+        </div>
+
+        <div class="card"><h3>Mission</h3><p>New Amsterdam Multilateral School is fully committed to developing the maximum potential of each student through exposure to a wealth of meaningful learning experiences within a pleasant, stimulating and harmonious school environment.</p></div>
+
+        <div class="card"><h3>Motto</h3><p><strong>Progress Through Co-Operation</strong></p><p>Advancement is achieved when the entire school community works together.</p></div>
+
+        <div class="card"><h3>School's Pledge</h3><p>I pledge at all times to conduct myself as a responsible student, to adhere to the school's rules, and to work cooperatively with all members of staff and my fellow students in advancing the goals and ideals of New Amsterdam Multilateral School.</p></div>
+
+        <div class="card school-song">
+          <h3>School Song</h3>
+          <p>Our dear school we pledge to you<br>Forever to be so true<br>Striving always to do so well<br>Seeking ever to always excel</p>
+          <p>We all stand to sing our song<br>With our voices rich and strong<br>And our hearts are open wide<br>Filled with dignity and pride</p>
+          <p>We will work in unity<br>And will live in harmony<br>We are ever proud to share<br>Showing all our love and care</p>
+          <p>Let us march along the way<br>Striving for a brighter day<br>Reaching up to higher goals<br>As each term and year unfold</p>
+          <h4>Chorus</h4>
+          <p>New Amsterdam Multilateral, to you we sing aloud<br>New Amsterdam Multilateral, of you we are so proud<br>New Amsterdam Multilateral, your name ever will be<br>New Amsterdam Multilateral, so very dear to me</p>
+          <div class="song-credit">Written by Elton Lewis, Former Headmaster</div>
+        </div>
+
+        <div class="card house-card">
+          <h3>House System</h3>
+          <p>New Amsterdam Secondary School promotes teamwork, leadership, school spirit and healthy competition through its five-house system.</p>
+          <img src="houses.png" alt="New Amsterdam Secondary School House System">
+          <p><strong>House Colours:</strong></p>
+          <div class="house-colours"><span>🟡 Eagles</span><span>🔴 Macaws</span><span>🟠 Pheasants</span><span>🟢 Toucans</span><span>🔵 Spurwings</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><img src="nass-crest.png" alt="New Amsterdam Secondary School crest" style="width:88px;background:white;border-radius:50%;padding:4px"><h3>New Amsterdam Secondary School</h3><p>The MultiVerse of Opportunities<br>Progress Through Co-Operation</p></div>
+        <div><h3>Quick Links</h3><a href="about.html">About Us</a><a href="academics.html">Academics</a><a href="departments.html">Departments</a><a href="student-life.html">Student Life</a></div>
+        <div><h3>Admissions</h3><a href="grade7-admissions.html">Grade 7 Admissions</a><a href="cape-admissions.html">CAPE Admissions</a><a href="https://script.google.com/macros/s/AKfycbzB4xOwSAQT3T6wn8Ftz0v46wFkwLbsAv4fvyOl8fUjMCfb0Seq74mv4WgK6Ysi33HO/exec" target="_blank" rel="noopener">Apply Online</a></div>
+        <div><h3>Contact</h3><p>Cummingsville<br>New Amsterdam, Berbice<br>Guyana</p><a href="tel:+5923332252">+592 333-2252</a><a href="mailto:hm.se06009@moe.edu.gy">hm.se06009@moe.edu.gy</a></div>
+      </div>
+      <div class="footer-bottom">© <span data-year></span> New Amsterdam Secondary School. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

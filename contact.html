@@ -1,2 +1,651 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact Us | New Amsterdam Secondary School</title><meta name="description" content="Contact New Amsterdam Secondary School."><link rel="stylesheet" href="styles.css"></head><body><a class="skip" href="#main">Skip to content</a><div class="utility"><div class="container"><span>Official Website of New Amsterdam Secondary School</span><span>Progress Through Co-Operation</span></div></div>
-<header class="site-header"><div class="container brand-row"><a class="brand" href="index.html"><img src="nass-crest.png" alt="NASS crest"><span><span class="brand-name">New Amsterdam Secondary School</span><span class="brand-tag">The MultiVerse of Opportunities</span></span></a><button class="nav-toggle" aria-expanded="false">Menu</button><nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><div class="dropdown"><button class="dropbtn">Academics ▾</button><div class="dropdown-menu"><a href="academics.html#csec">CSEC</a><a href="academics.html#cape">CAPE</a><a href="academics.html#cvq">CVQ</a><a href="academics.html#ccslc">CCSLC</a></div></div><a href="departments.html">Departments</a><div class="dropdown"><button class="dropbtn">Admissions ▾</button><div class="dropdown-menu"><a href="admissions.html">Admissions Overview</a><a href="grade7-admissions.html">Grade 7 Admissions</a><a href="cape-admissions.html">CAPE Admissions</a></div></div><a href="student-life.html">Student Life</a><a href="news.html">News</a><a href="contact.html">Contact</a></nav></div></header><main id="main"><section class="page-hero"><div class="container"><div class="breadcrumbs">Home / Contact</div><h1>Contact Us</h1><p>Connect with the school administration for official information and assistance.</p></div></section><section><div class="container contact-grid"><div class="card accent-card"><h2>New Amsterdam Secondary School</h2><p><strong>Location:</strong><br>New Amsterdam, Berbice<br>Region Six, Guyana</p><p><strong>School Motto:</strong><br>Progress Through Co-Operation</p><p>Use the school’s official communication channels for admissions, student records and administrative matters.</p></div><div class="card form-card"><h2>Contact Form Layout</h2><p>This page is ready for the school’s official telephone number, email address and online contact form.</p><label>Name</label><input placeholder="Your name" disabled><label>Email</label><input placeholder="Your email" disabled><label>Message</label><textarea placeholder="Your message" disabled></textarea><p><em>Contact submission can be connected after the school confirms the preferred email address.</em></p></div></div></section></main><footer class="footer"><div class="container"><div class="footer-grid"><div><img src="nass-crest.png" alt="NASS crest" style="width:88px;background:white;border-radius:50%;padding:4px"><h3>New Amsterdam Secondary School</h3><p>The MultiVerse of Opportunities<br>Progress Through Co-Operation</p></div><div><h3>Quick Links</h3><a href="about.html">About Us</a><a href="academics.html">Academics</a><a href="departments.html">Departments</a><a href="student-life.html">Student Life</a></div><div><h3>Admissions</h3><a href="grade7-admissions.html">Grade 7 Admissions</a><a href="cape-admissions.html">CAPE Admissions</a><a href="https://script.google.com/macros/s/AKfycbzB4xOwSAQT3T6wn8Ftz0v46wFkwLbsAv4fvyOl8fUjMCfb0Seq74mv4WgK6Ysi33HO/exec" target="_blank" rel="noopener">Apply Online</a></div><div><h3>Contact</h3><p>New Amsterdam, Berbice<br>Region Six, Guyana</p><a href="contact.html">Contact the School</a></div></div><div class="footer-bottom">© <span data-year></span> New Amsterdam Secondary School. All rights reserved.</div></div></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Contact Us | New Amsterdam Secondary School</title>
+
+  <meta
+    name="description"
+    content="Contact New Amsterdam Secondary School in Cummingsville, New Amsterdam, Berbice, Guyana."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 1.15;
+      min-width: 0;
+    }
+
+    .brand-name,
+    .brand-tag {
+      display: block;
+      width: 100%;
+    }
+
+    .brand-tag {
+      margin-top: 6px;
+    }
+
+    .contact-intro {
+      max-width: 760px;
+      margin: 0 auto 34px;
+      text-align: center;
+    }
+
+    .contact-intro h2 {
+      margin-bottom: 12px;
+      color: var(--purple-dark);
+    }
+
+    .contact-details {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .contact-item {
+      background: #ffffff;
+      border: 1px solid #ddd7eb;
+      border-top: 5px solid var(--gold);
+      border-radius: 14px;
+      padding: 26px;
+      box-shadow: 0 8px 24px rgba(49, 28, 90, 0.08);
+    }
+
+    .contact-item h3 {
+      margin: 0 0 10px;
+      color: var(--purple-dark);
+    }
+
+    .contact-item p {
+      margin: 0;
+      line-height: 1.65;
+    }
+
+    .contact-icon {
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      border-radius: 50%;
+      background: #eee9fa;
+      font-size: 1.55rem;
+    }
+
+    .contact-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--purple);
+      font-weight: 800;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .contact-actions .btn {
+      min-width: 190px;
+      text-align: center;
+    }
+
+    .admissions-box {
+      margin-top: 36px;
+      padding: 28px;
+      background: linear-gradient(135deg, #f7f3ff, #fff8df);
+      border: 1px solid #ddd7eb;
+      border-left: 6px solid var(--gold);
+      border-radius: 14px;
+    }
+
+    .admissions-box h2 {
+      margin-top: 0;
+      color: var(--purple-dark);
+    }
+
+    .admissions-box ul {
+      margin: 16px 0 0 20px;
+      padding: 0;
+    }
+
+    .admissions-box li {
+      margin-bottom: 8px;
+    }
+
+    .contact-note {
+      margin-top: 26px;
+      padding: 20px 22px;
+      background: #fff8df;
+      border-left: 5px solid var(--gold);
+      border-radius: 10px;
+    }
+
+    @media (max-width: 760px) {
+      .contact-details {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-actions {
+        flex-direction: column;
+      }
+
+      .contact-actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a class="skip" href="#main">
+    Skip to content
+  </a>
+
+  <div class="utility">
+    <div class="container">
+
+      <span>
+        Official Website of New Amsterdam Secondary School
+      </span>
+
+      <span>
+        Progress Through Co-Operation
+      </span>
+
+    </div>
+  </div>
+
+  <header class="site-header">
+
+    <div class="container brand-row">
+
+      <a class="brand" href="index.html">
+
+        <img
+          src="nass-crest.png"
+          alt="New Amsterdam Secondary School crest"
+        >
+
+        <span class="brand-copy">
+
+          <span class="brand-name">
+            New Amsterdam Secondary School
+          </span>
+
+          <span class="brand-tag">
+            The MultiVerse of Opportunities
+          </span>
+
+        </span>
+
+      </a>
+
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+
+      <nav
+        class="nav"
+        aria-label="Main navigation"
+      >
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <div class="dropdown">
+
+          <button class="dropbtn">
+            Academics ▾
+          </button>
+
+          <div class="dropdown-menu">
+            <a href="academics.html#foundation">Foundationn Programme</a>
+            <a href="academics.html#csec">CSEC</a>
+            <a href="academics.html#cape">CAPE</a>
+            <a href="academics.html#cvq">CVQ</a>
+            <a href="academics.html#ccslc">CCSLC</a>
+
+          </div>
+
+        </div>
+
+        <a href="departments.html">
+          Departments
+        </a>
+
+        <div class="dropdown">
+
+          <button class="dropbtn">
+            Admissions ▾
+          </button>
+
+          <div class="dropdown-menu">
+
+            <a href="admissions.html">
+              Admissions Overview
+            </a>
+
+            <a href="grade7-admissions.html">
+              Grade 7 Admissions
+            </a>
+
+            <a href="cape-admissions.html">
+              CAPE Admissions
+            </a>
+
+          </div>
+
+        </div>
+
+        <a href="student-life.html">
+          Student Life
+        </a>
+        <a href="resources.html">
+                    Resources
+                </a>
+
+        <a href="news.html">
+          News
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+
+      <div class="container">
+
+        <div class="breadcrumbs">
+          Home / Contact
+        </div>
+
+        <h1>
+          Contact Us
+        </h1>
+
+        <p>
+          Connect with the school administration for official
+          information, admissions enquiries and assistance.
+        </p>
+
+      </div>
+
+    </section>
+
+    <section>
+
+      <div class="container">
+
+        <div class="contact-intro">
+
+          <span
+            class="eyebrow"
+            style="color: var(--purple);"
+          >
+            Get in Touch
+          </span>
+
+          <h2>
+            New Amsterdam Secondary School
+          </h2>
+
+          <p>
+            Our administrative team is available to assist
+            parents, students, applicants and members of the
+            wider community during regular operating hours.
+          </p>
+
+        </div>
+
+        <div class="contact-details">
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              📍
+            </div>
+
+            <h3>
+              Address
+            </h3>
+
+            <p>
+              Cummingsville
+              <br>
+              New Amsterdam, Berbice
+              <br>
+              Guyana
+            </p>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              ☎️
+            </div>
+
+            <h3>
+              Contact Number
+            </h3>
+
+            <p>
+              Contact the school administration during
+              regular operating hours.
+            </p>
+
+            <a
+              class="contact-link"
+              href="tel:+5923332252"
+            >
+              +592 333-2252
+            </a>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              ✉️
+            </div>
+
+            <h3>
+              Email
+            </h3>
+
+            <p>
+              Send official enquiries to the school’s
+              Ministry of Education email address.
+            </p>
+
+            <a
+              class="contact-link"
+              href="mailto:hm.se06009@moe.edu.gy"
+            >
+              hm.se06009@moe.edu.gy
+            </a>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              🕒
+            </div>
+
+            <h3>
+              Operating Hours
+            </h3>
+
+            <p>
+              Monday to Friday
+              <br>
+              8:30 a.m. to 3:00 p.m.
+            </p>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              📘
+            </div>
+
+            <h3>
+              Facebook
+            </h3>
+
+            <p>
+              Follow school announcements, activities and
+              achievements on Facebook.
+            </p>
+
+            <span class="contact-link">
+              New Amsterdam Secondary School - Multilateral
+            </span>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              🌐
+            </div>
+
+            <h3>
+              Official Website
+            </h3>
+
+            <p>
+              Access school information, admissions services
+              and notices through our official website.
+            </p>
+
+            <a
+              class="contact-link"
+              href="https://newamsterdamsecondaryschool.org"
+            >
+              newamsterdamsecondaryschool.org
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="contact-actions">
+
+          <a
+            class="btn btn-primary"
+            href="mailto:hm.se06009@moe.edu.gy"
+          >
+            Email the School
+          </a>
+
+          <a
+            class="btn btn-purple"
+            href="admissions.html"
+          >
+            View Admissions
+          </a>
+
+        </div>
+
+        <div class="admissions-box">
+
+          <h2>
+            Admissions Enquiries
+          </h2>
+
+          <p>
+            For information regarding the following matters,
+            contact the school during normal operating hours
+            or visit the Admissions section of this website.
+          </p>
+
+          <ul>
+            <li>Grade 7 Admissions</li>
+            <li>CAPE Admissions</li>
+            <li>Student Registration</li>
+            <li>Transfer Requests</li>
+            <li>General School Enquiries</li>
+          </ul>
+
+        </div>
+
+        <div class="contact-note">
+
+          <strong>
+            Please note:
+          </strong>
+
+          For matters concerning student records,
+          registration, admissions or other official school
+          business, please contact the school administration
+          directly using the telephone number or email address
+          provided above.
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <img
+            src="nass-crest.png"
+            alt="New Amsterdam Secondary School crest"
+            style="
+              width: 88px;
+              background: white;
+              border-radius: 50%;
+              padding: 4px;
+            "
+          >
+
+          <h3>
+            New Amsterdam Secondary School
+          </h3>
+
+          <p>
+            The MultiVerse of Opportunities
+            <br>
+            Progress Through Co-Operation
+          </p>
+
+        </div>
+
+        <div>
+
+          <h3>
+            Quick Links
+          </h3>
+
+          <a href="about.html">
+            About Us
+          </a>
+
+          <a href="academics.html">
+            Academics
+          </a>
+
+          <a href="departments.html">
+            Departments
+          </a>
+
+          <a href="student-life.html">
+            Student Life
+          </a>
+
+        </div>
+
+        <div>
+
+          <h3>
+            Admissions
+          </h3>
+
+          <a href="grade7-admissions.html">
+            Grade 7 Admissions
+          </a>
+
+          <a href="cape-admissions.html">
+            CAPE Admissions
+          </a>
+
+          <a
+            href="https://script.google.com/macros/s/AKfycbzB4xOwSAQT3T6wn8Ftz0v46wFkwLbsAv4fvyOl8fUjMCfb0Seq74mv4WgK6Ysi33HO/exec"
+            target="_blank"
+            rel="noopener"
+          >
+            Apply Online
+          </a>
+
+        </div>
+
+        <div>
+
+          <h3>
+            Contact
+          </h3>
+
+          <p>
+            Cummingsville
+            <br>
+            New Amsterdam, Berbice
+            <br>
+            Guyana
+          </p>
+
+          <a href="tel:+5923332252">
+            +592 333-2252
+          </a>
+
+          <a href="mailto:hm.se06009@moe.edu.gy">
+            hm.se06009@moe.edu.gy
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        ©
+        <span data-year></span>
+        New Amsterdam Secondary School.
+        All rights reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
