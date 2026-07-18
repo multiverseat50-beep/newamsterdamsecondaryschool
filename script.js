@@ -1,0 +1,2 @@
+
+const toggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.nav');if(toggle){toggle.addEventListener('click',()=>{nav.classList.toggle('open');toggle.setAttribute('aria-expanded',nav.classList.contains('open'))})}document.querySelectorAll('.dropbtn').forEach(btn=>btn.addEventListener('click',e=>{if(window.innerWidth<=980){e.preventDefault();btn.parentElement.classList.toggle('open')}}));document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
