@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>
+        The MultiVerse Store | New Amsterdam Secondary School
+    </title>
+
+    <meta
+        name="description"
+        content="Official merchandise from New Amsterdam Secondary School."
+    >
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+    <style>
+
+        .shop-intro {
+            max-width: 820px;
+            margin: 0 auto 35px;
+            text-align: center;
+        }
+
+        .shop-notice {
+            margin-bottom: 35px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            align-items: start;
+        }
+
+        .product-card {
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+            height: auto;
+            align-self: start;
+        }
+
+        .product-image-link {
+            display: block;
+            background: #f7f5fb;
+            text-decoration: none;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 340px;
+            display: block;
+            object-fit: contain;
+            padding: 16px;
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .product-image:hover {
+            transform: scale(1.03);
+        }
+
+        .product-body {
+            padding: 22px;
+        }
+
+        .product-body h3 {
+            margin: 0 0 8px;
+            color: var(--purple-dark);
+        }
+
+        .product-category {
+            display: inline-block;
+            margin-bottom: 12px;
+            padding: 5px 11px;
+            background: var(--gold-soft);
+            border-radius: 999px;
+            color: #6b4c00;
+            font-size: 0.78rem;
+            font-weight: 900;
+        }
+
+        .product-details {
+            margin: 12px 0;
+            color: var(--muted);
+        }
+
+        .product-price {
+            margin: 12px 0;
+            color: var(--purple-dark);
+            font-size: 1.35rem;
+            font-weight: 900;
+        }
+
+        .product-order {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            padding: 11px 16px;
+            background: var(--purple);
+            border-radius: 9px;
+            color: #ffffff;
+            font-weight: 900;
+            text-decoration: none;
+        }
+
+        .product-order:hover {
+            background: var(--purple-dark);
+        }
+
+        .store-order-section {
+            background: var(--purple-dark);
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .store-order-section h2 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+
+        .store-order-section p {
+            max-width: 750px;
+            margin: 0 auto 25px;
+            color: #e9e1f7;
+        }
+
+        .store-order-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 22px;
+            background: var(--gold);
+            border-radius: 10px;
+            color: var(--purple-dark);
+            font-weight: 900;
+            text-decoration: none;
+        }
+
+        .store-order-button:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 980px) {
+
+            .product-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+        }
+
+        @media (max-width: 680px) {
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-image {
+                height: auto;
+                max-height: 420px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <a
+        class="skip"
+        href="#main"
+    >
+        Skip to content
+    </a>
+
+    <!-- TOP INFORMATION BAR -->
+
+    <div class="utility">
+
+        <div class="container">
+
+            <span>
+                Official Website of New Amsterdam Secondary School
+            </span>
+
+            <span>
+                Progress Through Co-Operation
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <div class="container brand-row">
+
+            <a
+                class="brand"
+                href="index.html"
+            >
+
+                <img
+                    src="nass-crest.png"
+                    alt="New Amsterdam Secondary School crest"
+                >
+
+                <span class="brand-copy">
+
+                    <span class="brand-name">
+                        New Amsterdam Secondary School
+                    </span>
+
+                    <span class="brand-tag">
+                        The MultiVerse of Opportunities
+                    </span>
+
+                </span>
+
+            </a>
+
+            <button
+                class="nav-toggle"
+                aria-expanded="false"
+            >
+                Menu
+            </button>
+
+            <nav
+                class="nav"
+                aria-label="Main navigation"
+            >
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <div class="dropdown">
+
+                    <button class="dropbtn">
+                        Academics ▾
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="academics.html#foundation">
+                            Foundation Programme
+                        </a>
+
+                        <a href="academics.html#streams">
+                            Streams of Study
+                        </a>
+
+                        <a href="academics.html#csec">
+                            CSEC
+                        </a>
+
+                        <a href="academics.html#cape">
+                            CAPE
+                        </a>
+
+                        <a href="academics.html#cvq">
+                            CVQ
+                        </a>
+
+                        <a href="academics.html#ccslc">
+                            CCSLC
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="departments.html">
+                    Departments
+                </a>
+
+                <div class="dropdown">
+
+                    <button class="dropbtn">
+                        Admissions ▾
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="admissions.html">
+                            Admissions Overview
+                        </a>
+
+                        <a href="grade7-admissions.html">
+                            Grade 7 Admissions
+                        </a>
+
+                        <a href="cape-admissions.html">
+                            CAPE Admissions
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="student-life.html">
+                    Student Life
+                </a>
+
+                <a href="resources.html">
+                    Resources
+                </a>
+
+                <a href="news.html">
+                    News
+                </a>
+
+                <a href="shop.html">
+                    Shop
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <main id="main">
+
+        <!-- PAGE HERO -->
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <div class="breadcrumbs">
+                    Home / Shop
+                </div>
+
+                <h1>
+                    The MultiVerse Store 
+                </h1>
+
+                <p>
+                    Show your Multi Pride with official merchandise
+                    from New Amsterdam Secondary School.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- PRODUCTS -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="shop-intro">
+
+                    <div class="section-head">
+
+                        <h2>
+                            Official School Merchandise
+                        </h2>
+
+                        <p>
+                            Browse our collection of house shirts,
+                            accessories and official NASS merchandise.
+                            Items are available while stocks last.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="notice shop-notice">
+
+                    <strong>
+                        Ordering information:
+                    </strong>
+
+                    Select the Order Now button to complete the online
+                    order form. For bulk, alumni or group orders,
+                    contact the school administration.
+
+                </div>
+
+                <div class="product-grid">
+
+                    <!-- EAGLES SHIRT -->
+
+                    <article class="card product-card">
+
+                        <a
+                            class="product-image-link"
+                            href="images/eagle.jpeg"
+                            target="_blank"
+                            rel="noopener"
+                        >
+
+                            <img
+                                src="images/eagle.jpeg"
+                                alt="Eagles House shirt"
+                                class="product-image"
+                            >
+
+                        </a>
+
+                        <div class="product-body">
+
+                            <span class="product-category">
+                                House Shirt
+                            </span>
+
+                            <h3>
+                                Eagles House Shirt
+                            </h3>
+
+                            <p class="product-details">
+                                Official yellow Eagles House shirt.
+                            </p>
+
+                            <p class="product-details">
+                                <strong>Sizes:</strong> S–XXL
+                            </p>
+
+                            <p class="product-price">
+                                G$6,000
+                            </p>
+
+                            <a
+                                class="product-order"
+                                href="https://forms.gle/tVBZA6KCw1Qjd2Qb9"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Order Now
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- MACAWS SHIRT -->
+
+                    <article class="card product-card">
+
+                        <a
+                            class="product-image-link"
+                            href="images/macaw.jpeg"
+                            target="_blank"
+                            rel="noopener"
+                        >
+
+                            <img
+                                src="images/macaw.jpeg"
+                                alt="Macaws House shirt"
+                                class="product-image"
+                            >
+
+                        </a>
+
+                        <div class="product-body">
+
+                            <span class="product-category">
+                                House Shirt
+                            </span>
+
+                            <h3>
+                                Macaws House Shirt
+                            </h3>
+
+                            <p class="product-details">
+                                Official red Macaws House shirt.
+                            </p>
+
+                            <p class="product-details">
+                                <strong>Sizes:</strong> S–XXL
+                            </p>
+
+                            <p class="product-price">
+                                G$6,000
+                            </p>
+
+                            <a
+                                class="product-order"
+                                href="https://forms.gle/tVBZA6KCw1Qjd2Qb9"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Order Now
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- SPURWINGS SHIRT -->
+
+                    <article class="card product-card">
+
+                        <a
+                            class="product-image-link"
+                            href="images/spurwing.jpeg"
+                            target="_blank"
+                            rel="noopener"
+                        >
+
+                            <img
+                                src="images/spurwing.jpeg"
+                                alt="Spurwings House shirt"
+                                class="product-image"
+                            >
+
+                        </a>
+
+                        <div class="product-body">
+
+                            <span class="product-category">
+                                House Shirt
+                            </span>
+
+                            <h3>
+                                Spurwings House Shirt
+                            </h3>
+
+                            <p class="product-details">
+                                Official royal-blue Spurwings House shirt.
+                            </p>
+
+                            <p class="product-details">
+                                <strong>Sizes:</strong> S–XXL
+                            </p>
+
+                            <p class="product-price">
+                                G$6,000
+                            </p>
+
+                            <a class="product-order"
+                            href="https://forms.gle/tVBZA6KCw1Qjd2Qb9"
+                            target="_blank"
+                            rel="noopener">
+                            Order Now
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <!-- TOUCANS SHIRT -->
+
+                    <article class="card product-card">
+
+                        <a
+                            class="product-image-link"
+                            href="images/toucan.jpeg"
+                            target="_blank"
+                            rel="noopener"
+                        >
+
+                            <img
+                                src="images/toucan.jpeg"
+                                alt="Toucans House shirt"
+                                class="product-image"
+                            >
+
+                        </a>
+
+                        <div class="product-body">
+
+                            <span class="product-category">
+                                House Shirt
+                            </span>
+
+                            <h3>
+                                Toucans House Shirt
+                            </h3>
+
+                            <p class="product-details">
+                                Official green Toucans House shirt.
+                            </p>
+
+                            <p class="product-details">
+                                <strong>Sizes:</strong> S–XXL
+                            </p>
+
+                            <p class="product-price">
+                                G$6,000
+                            </p>
+
+                            <a
+                                class="product-order"
+                                href="https://forms.gle/tVBZA6KCw1Qjd2Qb9"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Order Now
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- PHEASANTS SHIRT -->
+
+                    <article class="card product-card">
+
+                        <a
+                            class="product-image-link"
+                            href="images/pheasant.jpeg"
+                            target="_blank"
+                            rel="noopener"
+                        >
+
+                            <img
+                                src="images/pheasant.jpeg"
+                                alt="Pheasants House shirt"
+                                class="product-image"
+                            >
+
+                        </a>
+
+                        <div class="product-body">
+
+                            <span class="product-category">
+                                House Shirt
+                            </span>
+
+                            <h3>
+                                Pheasants House Shirt
+                            </h3>
+
+                            <p class="product-details">
+                                Official orange Pheasants House shirt.
+                            </p>
+
+                            <p class="product-details">
+                                <strong>Sizes:</strong> S–XXL
+                            </p>
+
+                            <p class="product-price">
+                                G$6,000
+                            </p>
+
+                            <a
+                                class="product-order"
+                                href="https://forms.gle/tVBZA6KCw1Qjd2Qb9"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Order Now
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- MUG -->
+
+                    <article class="card product-card">
+
+                        <a
+                            class="product-image-link"
+                            href="images/mug.jpeg"
+                            target="_blank"
+                            rel="noopener"
+                        >
+
+                            <img
+                                src="images/mug.jpeg"
+                                alt="New Amsterdam Secondary School mug"
+                                class="product-image"
+                            >
+
+                        </a>
+
+                        <div class="product-body">
+
+                            <span class="product-category">
+                                Accessory
+                            </span>
+
+                            <h3>
+                                NASS Mug
+                            </h3>
+
+                            <p class="product-details">
+                                Official school mug featuring the NASS identity.
+                            </p>
+
+                            <p class="product-price">
+                                Price to be confirmed
+                            </p>
+
+                            <a
+                                class="product-order"
+                                href="https://forms.gle/tVBZA6KCw1Qjd2Qb9"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Order Now
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- HAT -->
+
+                    <article class="card product-card">
+
+                        <a
+                            class="product-image-link"
+                            href="images/hat.jpeg"
+                            target="_blank"
+                            rel="noopener"
+                        >
+
+                            <img
+                                src="images/hat.jpeg"
+                                alt="New Amsterdam Secondary School hat"
+                                class="product-image"
+                            >
+
+                        </a>
+
+                        <div class="product-body">
+
+                            <span class="product-category">
+                                Accessory
+                            </span>
+
+                            <h3>
+                                NASS Hat
+                            </h3>
+
+                            <p class="product-details">
+                                Official school hat for students, staff,
+                                alumni and supporters.
+                            </p>
+
+                            <p class="product-price">
+                                Price to be confirmed
+                            </p>
+
+                            <a
+                                class="product-order"
+                                href="https://forms.gle/tVBZA6KCw1Qjd2Qb9"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Order Now
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- KEY CHAIN -->
+
+                    <article class="card product-card">
+
+                        <a
+                            class="product-image-link"
+                            href="images/kchain.jpeg"
+                            target="_blank"
+                            rel="noopener"
+                        >
+
+                            <img
+                                src="images/kchain.jpeg"
+                                alt="New Amsterdam Secondary School key chain"
+                                class="product-image"
+                            >
+
+                        </a>
+
+                        <div class="product-body">
+
+                            <span class="product-category">
+                                Accessory
+                            </span>
+
+                            <h3>
+                                NASS Key Chain
+                            </h3>
+
+                            <p class="product-details">
+                                A compact school keepsake for students,
+                                staff, alumni and supporters.
+                            </p>
+
+                            <p class="product-price">
+                                Price to be confirmed
+                            </p>
+
+                            <a
+                                class="product-order"
+                                href="https://forms.gle/tVBZA6KCw1Qjd2Qb9"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Order Now
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ORDER SECTION -->
+
+        <section class="store-order-section">
+
+            <div class="container">
+
+                <h2>
+                    Ready to Place an Order?
+                </h2>
+
+                <p>
+                    Complete the online order form and provide your
+                    contact information, selected product, quantity
+                    and preferred size where applicable.
+                </p>
+
+                <a
+                    class="store-order-button"
+                    href="https://forms.gle/tVBZA6KCw1Qjd2Qb9"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Place Your Order
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <img
+                        src="nass-crest.png"
+                        alt="New Amsterdam Secondary School crest"
+                        style="
+                            width: 88px;
+                            background: white;
+                            border-radius: 50%;
+                            padding: 4px;
+                        "
+                    >
+
+                    <h3>
+                        New Amsterdam Secondary School
+                    </h3>
+
+                    <p>
+                        The MultiVerse of Opportunities
+                        <br>
+                        Progress Through Co-Operation
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                    <a href="academics.html">
+                        Academics
+                    </a>
+
+                    <a href="departments.html">
+                        Departments
+                    </a>
+
+                    <a href="student-life.html">
+                        Student Life
+                    </a>
+
+                    <a href="resources.html">
+                        Resources
+                    </a>
+
+                    <a href="shop.html">
+                        Shop
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Admissions
+                    </h3>
+
+                    <a href="grade7-admissions.html">
+                        Grade 7 Admissions
+                    </a>
+
+                    <a href="cape-admissions.html">
+                        CAPE Admissions
+                    </a>
+
+                    <a
+                        href="https://script.google.com/macros/s/AKfycbzB4xOwSAQT3T6wn8Ftz0v46wFkwLbsAv4fvyOl8fUjMCfb0Seq74mv4WgK6Ysi33HO/exec"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Apply Online
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Contact
+                    </h3>
+
+                    <p>
+                        Cummingsville
+                        <br>
+                        New Amsterdam, Berbice
+                        <br>
+                        Guyana
+                    </p>
+
+                    <a href="tel:+5923332252">
+                        +592 333-2252
+                    </a>
+
+                    <a href="mailto:hm.se06009@moe.edu.gy">
+                        hm.se06009@moe.edu.gy
+                    </a>
+
+                    <a href="contact.html">
+                        Contact the School
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © <span data-year></span>
+                New Amsterdam Secondary School.
+                All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
