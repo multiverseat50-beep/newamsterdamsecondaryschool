@@ -2,27 +2,168 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Student Life | New Amsterdam Secondary School</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description" content="Student life at New Amsterdam Secondary School.">
+    <title>
+        Student Life | New Amsterdam Secondary School
+    </title>
 
-    <link rel="stylesheet" href="styles.css">
+    <meta
+        name="description"
+        content="Student life and school uniforms at New Amsterdam Secondary School."
+    >
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+    <!-- Styling used only for the uniform section -->
+
+    <style>
+
+        .uniform-section {
+            background: #ffffff;
+        }
+
+        .uniform-intro {
+            max-width: 800px;
+            margin: 0 auto 45px;
+            text-align: center;
+        }
+
+        .uniform-group {
+            margin-top: 50px;
+        }
+
+        .uniform-group:first-of-type {
+            margin-top: 0;
+        }
+
+        .uniform-group-title {
+            margin: 0 0 24px;
+            padding-bottom: 10px;
+            border-bottom: 4px solid var(--gold);
+            color: var(--purple-dark);
+            font-size: 1.65rem;
+        }
+
+        .uniform-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 26px;
+            align-items: start;
+        }
+
+        .uniform-card {
+            height: auto;
+            align-self: start;
+        }
+
+        .uniform-image-link {
+            display: block;
+            text-decoration: none;
+        }
+
+        .uniform-image {
+            width: 100%;
+            height: 520px;
+            display: block;
+            object-fit: contain;
+            background: #f7f5fb;
+            border-radius: 12px;
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .uniform-image:hover {
+            transform: scale(1.015);
+            box-shadow: 0 12px 28px rgba(40, 20, 79, 0.18);
+        }
+
+        .uniform-card h3 {
+            margin-top: 20px;
+        }
+
+        .uniform-view-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--purple);
+            font-weight: 900;
+            text-decoration: none;
+        }
+
+        .uniform-view-link:hover {
+            text-decoration: underline;
+        }
+
+
+        .pe-uniform-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .pe-uniform-wrapper .uniform-card {
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        .uniform-group .section-head {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 760px) {
+
+            .uniform-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .uniform-image {
+                height: auto;
+                max-height: 520px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 <body>
 
     <!-- Skip Link -->
-    <a class="skip" href="#main">Skip to content</a>
+
+    <a
+        class="skip"
+        href="#main"
+    >
+        Skip to content
+    </a>
 
     <!-- Utility Bar -->
+
     <div class="utility">
+
         <div class="container">
-            <span>Official Website of New Amsterdam Secondary School</span>
-            <span>Progress Through Co-Operation</span>
+
+            <span>
+                Official Website of New Amsterdam Secondary School
+            </span>
+
+            <span>
+                Progress Through Co-Operation
+            </span>
+
         </div>
+
     </div>
 
     <!-- ================= HEADER ================= -->
@@ -32,10 +173,19 @@
         <div class="container brand-row">
 
             <!-- Logo -->
-            <a class="brand" href="index.html">
-                <img src="nass-crest.png" alt="NASS Crest">
 
-                <span>
+            <a
+                class="brand"
+                href="index.html"
+            >
+
+                <img
+                    src="nass-crest.png"
+                    alt="New Amsterdam Secondary School crest"
+                >
+
+                <span class="brand-copy">
+
                     <span class="brand-name">
                         New Amsterdam Secondary School
                     </span>
@@ -43,22 +193,37 @@
                     <span class="brand-tag">
                         The MultiVerse of Opportunities
                     </span>
+
                 </span>
+
             </a>
 
             <!-- Mobile Menu -->
-            <button class="nav-toggle" aria-expanded="false">
+
+            <button
+                class="nav-toggle"
+                aria-expanded="false"
+            >
                 Menu
             </button>
 
             <!-- Navigation -->
-            <nav class="nav" aria-label="Main Navigation">
 
-                <a href="index.html">Home</a>
+            <nav
+                class="nav"
+                aria-label="Main Navigation"
+            >
 
-                <a href="about.html">About</a>
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
 
                 <!-- Academics -->
+
                 <div class="dropdown">
 
                     <button class="dropbtn">
@@ -66,18 +231,40 @@
                     </button>
 
                     <div class="dropdown-menu">
-                        <a href="academics.html#foundation">Foundation Programme</a>
-                        <a href="academics.html#csec">CSEC</a>
-                        <a href="academics.html#cape">CAPE</a>
-                        <a href="academics.html#cvq">CVQ</a>
-                        <a href="academics.html#ccslc">CCSLC</a>
+
+                        <a href="academics.html#foundation">
+                            Foundation Programme
+                        </a>
+                        <a href="academics.html#streams of study">
+                            Streams of Study
+                        </a>
+
+                        <a href="academics.html#csec">
+                            CSEC
+                        </a>
+
+                        <a href="academics.html#cape">
+                            CAPE
+                        </a>
+
+                        <a href="academics.html#cvq">
+                            CVQ
+                        </a>
+
+                        <a href="academics.html#ccslc">
+                            CCSLC
+                        </a>
+
                     </div>
 
                 </div>
 
-                <a href="departments.html">Departments</a>
+                <a href="departments.html">
+                    Departments
+                </a>
 
                 <!-- Admissions -->
+
                 <div class="dropdown">
 
                     <button class="dropbtn">
@@ -85,6 +272,7 @@
                     </button>
 
                     <div class="dropdown-menu">
+
                         <a href="admissions.html">
                             Admissions Overview
                         </a>
@@ -96,18 +284,26 @@
                         <a href="cape-admissions.html">
                             CAPE Admissions
                         </a>
+
                     </div>
 
                 </div>
 
-                <a href="student-life.html">Student Life</a>
+                <a href="student-life.html">
+                    Student Life
+                </a>
+
                 <a href="resources.html">
                     Resources
                 </a>
 
-                <a href="news.html">News</a>
+                <a href="news.html">
+                    News
+                </a>
 
-                <a href="contact.html">Contact</a>
+                <a href="contact.html">
+                    Contact
+                </a>
 
             </nav>
 
@@ -120,6 +316,7 @@
     <main id="main">
 
         <!-- Hero -->
+
         <section class="page-hero">
 
             <div class="container">
@@ -128,10 +325,12 @@
                     Home / Student Life
                 </div>
 
-                <h1>Student Life</h1>
+                <h1>
+                    Student Life
+                </h1>
 
                 <p>
-                    Leadership, service, sport and belonging are important
+                    Leadership, service,discipline, co-curriculars, extra-curriculars, and academic excellence are important
                     parts of the NASS experience.
                 </p>
 
@@ -139,64 +338,643 @@
 
         </section>
 
-        <!-- Student Life Cards -->
-        <section>
+        <!-- ================= SCHOOL UNIFORM ================= -->
 
-            <div class="container grid-3">
+        <section class="uniform-section">
 
-                <div class="card">
-                    <h3>Student Council</h3>
-                    <p>
-                        Student representatives develop leadership,
-                        communication and service through elected participation.
-                    </p>
+            <div class="container">
+
+                <div class="uniform-intro">
+
+                    <div class="section-head">
+
+                        <h2>
+                            School Uniform
+                        </h2>
+
+                        <p>
+                            The New Amsterdam Secondary School uniform
+                            represents pride, discipline and unity. Students
+                            are expected to wear the prescribed uniform
+                            neatly and correctly at all times.
+                        </p>
+
+                    </div>
+
                 </div>
 
-                <div class="card">
-                    <h3>House System</h3>
-                    <p>
-                        Eagle, Macaw, Spurwing, Toucan and Pheasant Houses
-                        promote teamwork, participation and friendly competition.
-                    </p>
+                <!-- GRADES 7–9 -->
+
+                <div class="uniform-group">
+
+                    <h3 class="uniform-group-title">
+                        Grades 7–9 Uniform
+                    </h3>
+
+                    <div class="uniform-grid">
+
+                        <!-- Grades 7–9 Boys -->
+
+                        <article class="card uniform-card">
+
+                            <a
+                                class="uniform-image-link"
+                                href="grade-7-9-boys.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+
+                                <img
+                                    src="grade-7-9-boys.jpeg"
+                                    alt="Grades 7 to 9 boys' school uniform"
+                                    class="uniform-image"
+                                >
+
+                            </a>
+
+                            <h3>
+                                Grades 7–9 Boys
+                            </h3>
+
+                            <p>
+                                The prescribed uniform for male students
+                                in Grades 7 to 9 must be worn neatly with
+                                the approved trousers, footwear and
+                                accessories.
+                            </p>
+
+                            <a
+                                class="uniform-view-link"
+                                href="grade-7-9-boys.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                View larger image →
+                            </a>
+
+                        </article>
+
+                        <!-- Grades 7–9 Girls -->
+
+                        <article class="card uniform-card">
+
+                            <a
+                                class="uniform-image-link"
+                                href="grade-7-9-girls.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+
+                                <img
+                                    src="grade-7-9-girls.jpeg"
+                                    alt="Grades 7 to 9 girls' school uniform"
+                                    class="uniform-image"
+                                >
+
+                            </a>
+
+                            <h3>
+                                Grades 7–9 Girls
+                            </h3>
+
+                            <p>
+                                The prescribed uniform for female students
+                                in Grades 7 to 9 must be worn neatly and in
+                                keeping with the school's dress and grooming
+                                standards.
+                            </p>
+
+                            <a
+                                class="uniform-view-link"
+                                href="grade-7-9-girls.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                View larger image →
+                            </a>
+
+                        </article>
+
+                    </div>
+
                 </div>
 
-                <div class="card">
-                    <h3>Cadet Corps</h3>
-                    <p>
-                        Cadet activities support discipline,
-                        teamwork, leadership and civic responsibility.
-                    </p>
+                <!-- GRADE 10 -->
+
+                <div class="uniform-group">
+
+                    <h3 class="uniform-group-title">
+                        Grade 10 Uniform
+                    </h3>
+
+                    <div class="uniform-grid">
+
+                        <!-- Grade 10 Boys -->
+
+                        <article class="card uniform-card">
+
+                            <a
+                                class="uniform-image-link"
+                                href="grade10-boys.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+
+                                <img
+                                    src="grade10-boys.jpeg"
+                                    alt="Grade 10 boys' school uniform"
+                                    class="uniform-image"
+                                >
+
+                            </a>
+
+                            <h3>
+                                Grade 10 Boys
+                            </h3>
+
+                            <p>
+                                Grade 10 male students are required to wear
+                                the approved Grade 10 uniform with the
+                                prescribed trousers, footwear and accessories.
+                            </p>
+
+                            <a
+                                class="uniform-view-link"
+                                href="grade10-boys.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                View larger image →
+                            </a>
+
+                        </article>
+
+                        <!-- Grade 10 Girls -->
+
+                        <article class="card uniform-card">
+
+                            <a
+                                class="uniform-image-link"
+                                href="grade10-girls.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+
+                                <img
+                                    src="grade10-girls.jpeg"
+                                    alt="Grade 10 girls' school uniform"
+                                    class="uniform-image"
+                                >
+
+                            </a>
+
+                            <h3>
+                                Grade 10 Girls
+                            </h3>
+
+                            <p>
+                                Grade 10 female students are required to wear
+                                the approved Grade 10 uniform in accordance
+                                with the school's dress and grooming standards.
+                            </p>
+
+                            <a
+                                class="uniform-view-link"
+                                href="grade10-girls.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                View larger image →
+                            </a>
+
+                        </article>
+
+                    </div>
+
                 </div>
 
-                <div class="card">
-                    <h3>Sports</h3>
-                    <p>
-                        Students participate in a wide variety of sporting
-                        activities that build fitness and school pride.
-                    </p>
+                <!-- GRADE 11 -->
+
+                <div class="uniform-group">
+
+                    <h3 class="uniform-group-title">
+                        Grade 11 Uniform
+                    </h3>
+
+                    <div class="uniform-grid">
+
+                        <!-- Grade 11 Boys -->
+
+                        <article class="card uniform-card">
+
+                            <a
+                                class="uniform-image-link"
+                                href="sixth-formboys.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+
+                                <img
+                                    src="sixth-formboys.jpeg"
+                                    alt="Grade 11 boys' school uniform"
+                                    class="uniform-image"
+                                >
+
+                            </a>
+
+                            <h3>
+                                Grade 11 Boys
+                            </h3>
+
+                            <p>
+                                Grade 11 male students must wear the
+                                approved senior uniform neatly and with
+                                the prescribed trousers, footwear and
+                                accessories.
+                            </p>
+
+                            <a
+                                class="uniform-view-link"
+                                href="sixth-formboys.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                View larger image →
+                            </a>
+
+                        </article>
+
+                        <!-- Grade 11 Girls -->
+
+                        <article class="card uniform-card">
+
+                            <a
+                                class="uniform-image-link"
+                                href="grade11-girls.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+
+                                <img
+                                    src="grade11-girls.jpeg"
+                                    alt="Grade 11 girls' school uniform"
+                                    class="uniform-image"
+                                >
+
+                            </a>
+
+                            <h3>
+                                Grade 11 Girls
+                            </h3>
+
+                            <p>
+                                Grade 11 female students must wear the
+                                approved senior uniform neatly and in
+                                accordance with the school's dress and
+                                grooming standards.
+                            </p>
+
+                            <a
+                                class="uniform-view-link"
+                                href="grade11-girls.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                View larger image →
+                            </a>
+
+                        </article>
+
+                    </div>
+
                 </div>
 
-                <div class="card">
-                    <h3>Clubs &amp; Societies</h3>
-                    <p>
-                        Co-curricular groups provide opportunities for creativity,
-                        culture, service and personal growth.
-                    </p>
+                <!-- SIXTH FORM -->
+
+                <div class="uniform-group">
+
+                    <h3 class="uniform-group-title">
+                        Sixth Form Uniform
+                    </h3>
+
+                    <div class="uniform-grid">
+
+                        <!-- Sixth Form Boys -->
+
+                        <article class="card uniform-card">
+
+                            <a
+                                class="uniform-image-link"
+                                href="grade11-boys.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+
+                                <img
+                                    src="grade11-boys.jpeg"
+                                    alt="Sixth Form boys' school uniform"
+                                    class="uniform-image"
+                                >
+
+                            </a>
+
+                            <h3>
+                                Sixth Form Boys
+                            </h3>
+
+                            <p>
+                                Sixth Form male students are expected to
+                                wear the prescribed uniform with
+                                professionalism, pride and attention to
+                                personal grooming. Sixth Form students have a choice of three shirt colours: pink, blue, or yellow. Year One students wear a khaki tie with one stripe, while Year Two students wear a khaki tie with two stripes. The colour of the stripe matches the colour of the shirt.
+                            </p>
+
+                            <a
+                                class="uniform-view-link"
+                                href="grade11-boys.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                View larger image →
+                            </a>
+
+                        </article>
+
+                        <!-- Sixth Form Girls -->
+
+                        <article class="card uniform-card">
+
+                            <a
+                                class="uniform-image-link"
+                                href="sixth-formgirls.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+
+                                <img
+                                    src="sixth-formgirls.jpeg"
+                                    alt="Sixth Form girls' school uniform"
+                                    class="uniform-image"
+                                >
+
+                            </a>
+
+                            <h3>
+                                Sixth Form Girls
+                            </h3>
+
+                            <p>
+                                Sixth Form female students are expected
+                                to wear the prescribed uniform with
+                                professionalism, pride and attention to
+                                personal grooming. Sixth Form students have a choice of three shirt colours: pink, blue, or yellow. Year One students wear a khaki tie with one stripe, while Year Two students wear a khaki tie with two stripes. The colour of the stripe matches the colour of the shirt.
+                            </p>
+
+                            <a
+                                class="uniform-view-link"
+                                href="sixth-formgirls.jpeg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                View larger image →
+                            </a>
+
+                        </article>
+
+                    </div>
+
                 </div>
 
-                <div class="card">
-                    <h3>School Values</h3>
-                    <p>
-                        Respect, responsibility, cooperation,
-                        integrity and excellence guide conduct
-                        across the school community.
-                    </p>
+                <!-- PHYSICAL EDUCATION UNIFORM -->
+
+<div class="uniform-group">
+
+    <div class="section-head">
+        <h2>Physical Education Uniform</h2>
+        <p>Official Physical Education attire for all students.</p>
+    </div>
+
+    <div class="pe-uniform-wrapper">
+
+        <article class="card uniform-card">
+
+            <a
+                class="uniform-image-link"
+                href="pe-uniform.png"
+                target="_blank"
+                rel="noopener"
+            >
+
+                <img
+                    src="pe-uniform.png"
+                    alt="Physical Education Uniform"
+                    class="uniform-image"
+                >
+
+            </a>
+
+            <h3>
+                Physical Education Uniform
+            </h3>
+
+            <p>
+                Students are required to wear the official Physical
+                Education uniform during PE lessons, sporting
+                activities and other approved school events.
+                The uniform should always be clean, neat and worn
+                with the appropriate footwear.
+            </p>
+
+            <a
+                class="uniform-view-link"
+                href="pe-uniform.png"
+                target="_blank"
+                rel="noopener"
+            >
+                View larger image →
+            </a>
+
+        </article>
+
+    </div>
+
                 </div>
 
             </div>
 
         </section>
 
+        <!-- STUDENT LIFE ACTIVITIES -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="section-head">
+                    <h2>Activities and Student Development</h2>
+                    <p>Students grow beyond the classroom through leadership, service, sport and co-curricular participation.</p>
+                </div>
+
+                <div class="grid-3">
+
+                <div class="card">
+
+                    <h3>
+                        Student Council
+                    </h3>
+
+                    <p>
+                        Student representatives develop leadership,
+                        communication and service through elected participation.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        House System
+                    </h3>
+
+                    <p>
+                        Eagle, Macaw, Spurwing, Toucan and Pheasant Houses
+                        promote teamwork, participation and friendly competition.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        Cadet Corps
+                    </h3>
+
+                    <p>
+                        Cadet activities support discipline, teamwork,
+                        leadership and civic responsibility.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        Sports
+                    </h3>
+
+                    <p>
+                        Students participate in a wide variety of sporting
+                        activities that build fitness and school pride.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        Clubs &amp; Societies
+                    </h3>
+
+                    <p>
+                        Co-curricular groups provide opportunities for
+                        creativity, culture, service and personal growth.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        School Values
+                    </h3>
+
+                    <p>
+                        Respect, responsibility, cooperation, integrity and
+                        excellence guide conduct across the school community.
+                    </p>
+
+                </div>
+
+                </div>
+
+            </div>
+
+        </section>
+<!-- SIR GARFIELD SOBERS TOURNAMENT -->
+
+<section class="cricket-feature">
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <h2>
+                Sir Garfield Sobers International Schools Cricket Tournament
+            </h2>
+
+            <p>
+                New Amsterdam Secondary School proudly represented Guyana
+                at the prestigious Sir Garfield Sobers International Schools
+                Cricket Tournament in Barbados.
+            </p>
+
+        </div>
+
+        <div class="card cricket-story">
+
+            <div class="cricket-story-text">
+
+                <h3>
+                    Representing NASS on the International Stage
+                </h3>
+
+                <p>
+                    The school’s cricket team travelled to Barbados to
+                    participate in the Sir Garfield Sobers International
+                    Schools Cricket Tournament, competing alongside school
+                    teams from across the Caribbean and other participating
+                    countries.
+                </p>
+
+                <p>
+                    The tournament provided our student-athletes with valuable
+                    international competition, cultural exposure and the
+                    opportunity to develop teamwork, discipline, confidence
+                    and sportsmanship.
+                </p>
+
+                <p>
+                    During the tournament, members of the team also had the
+                    honour of meeting and taking a photograph with the late
+                    West Indies cricket legend, Sir Garfield Sobers, at the
+                    historic Kensington Oval in Barbados.
+                </p>
+
+            </div>
+
+            <div class="cricket-gallery">
+
+                <a href="sobers1.jpeg" target="_blank" rel="noopener">
+                    <img
+                        src="sobers1.jpeg"
+                        alt="NASS cricket team in Barbados, 2011"
+                    >
+                </a>
+
+                <a href="sobers2.jpeg" target="_blank" rel="noopener">
+                    <img
+                        src="sobers2.jpeg"
+                        alt="NASS cricket team with Sir Garfield Sobers at Kensington Oval, 2016"
+                    >
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
     </main>
 
     <!-- ================= FOOTER ================= -->
@@ -208,37 +986,69 @@
             <div class="footer-grid">
 
                 <!-- School -->
+
                 <div>
 
-                    <img src="nass-crest.png"
-                        alt="NASS Crest"
-                        style="width:88px;background:white;border-radius:50%;padding:4px;">
+                    <img
+                        src="nass-crest.png"
+                        alt="New Amsterdam Secondary School crest"
+                        style="
+                            width: 88px;
+                            background: white;
+                            border-radius: 50%;
+                            padding: 4px;
+                        "
+                    >
 
-                    <h3>New Amsterdam Secondary School</h3>
+                    <h3>
+                        New Amsterdam Secondary School
+                    </h3>
 
                     <p>
-                        The MultiVerse of Opportunities<br>
+                        The MultiVerse of Opportunities
+                        <br>
                         Progress Through Co-Operation
                     </p>
 
                 </div>
 
                 <!-- Quick Links -->
+
                 <div>
 
-                    <h3>Quick Links</h3>
+                    <h3>
+                        Quick Links
+                    </h3>
 
-                    <a href="about.html">About Us</a>
-                    <a href="academics.html">Academics</a>
-                    <a href="departments.html">Departments</a>
-                    <a href="student-life.html">Student Life</a>
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                    <a href="academics.html">
+                        Academics
+                    </a>
+
+                    <a href="departments.html">
+                        Departments
+                    </a>
+
+                    <a href="student-life.html">
+                        Student Life
+                    </a>
+
+                    <a href="resources.html">
+                        Resources
+                    </a>
 
                 </div>
 
                 <!-- Admissions -->
+
                 <div>
 
-                    <h3>Admissions</h3>
+                    <h3>
+                        Admissions
+                    </h3>
 
                     <a href="grade7-admissions.html">
                         Grade 7 Admissions
@@ -248,25 +1058,39 @@
                         CAPE Admissions
                     </a>
 
-                    <a href="https://script.google.com/macros/s/AKfycbzB4xOwSAQT3T6wn8Ftz0v46wFkwLbsAv4fvyOl8fUjMCfb0Seq74mv4WgK6Ysi33HO/exec"
+                    <a
+                        href="https://script.google.com/macros/s/AKfycbzB4xOwSAQT3T6wn8Ftz0v46wFkwLbsAv4fvyOl8fUjMCfb0Seq74mv4WgK6Ysi33HO/exec"
                         target="_blank"
-                        rel="noopener">
-
+                        rel="noopener"
+                    >
                         Apply Online
-
                     </a>
 
                 </div>
 
                 <!-- Contact -->
+
                 <div>
 
-                    <h3>Contact</h3>
+                    <h3>
+                        Contact
+                    </h3>
 
                     <p>
-                        New Amsterdam, Berbice<br>
-                        Region Six, Guyana
+                        Cummingsville
+                        <br>
+                        New Amsterdam, Berbice
+                        <br>
+                        Guyana
                     </p>
+
+                    <a href="tel:+5923332252">
+                        +592 333-2252
+                    </a>
+
+                    <a href="mailto:hm.se06009@moe.edu.gy">
+                        hm.se06009@moe.edu.gy
+                    </a>
 
                     <a href="contact.html">
                         Contact the School
@@ -277,9 +1101,12 @@
             </div>
 
             <div class="footer-bottom">
-                © <span data-year></span>
+
+                ©
+                <span data-year></span>
                 New Amsterdam Secondary School.
                 All rights reserved.
+
             </div>
 
         </div>
