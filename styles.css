@@ -365,3 +365,142 @@
     }
 
 }
+.site-map-section {
+    padding: 70px 0;
+    background: #f8fafc;
+}
+
+.site-map {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-map a {
+    display: block;
+}
+
+.site-map img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #d8dde6;
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-map img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+}
+
+.site-map figcaption {
+    margin-top: 15px;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+    .site-map-section {
+        padding: 50px 0;
+    }
+
+    .site-map img {
+        border-radius: 10px;
+    }
+}
+/*==============================
+ Past Head Teachers
+==============================*/
+
+.headteachers-section{
+    padding:70px 0;
+    background:#f8fafc;
+}
+
+.headteachers-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.headteacher-card{
+    background:#fff;
+    border-radius:16px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 8px 22px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.headteacher-card:hover{
+    transform:translateY(-8px);
+}
+
+.headteacher-card img{
+    width:100%;
+    aspect-ratio:4/5;
+    object-fit:cover;
+    display:block;
+}
+
+.headteacher-card h3{
+    margin:18px 0 6px;
+    color:var(--purple-dark);
+}
+
+.headteacher-card p{
+    margin:0;
+    font-weight:600;
+    color:#666;
+}
+
+.headteacher-card span{
+    display:block;
+    margin:15px 0 20px;
+    font-weight:700;
+    color:var(--gold);
+}
+
+.table-responsive{
+    overflow-x:auto;
+}
+
+.programme-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:1rem;
+}
+
+.programme-table th{
+    background:#0c4da2;
+    color:#fff;
+    padding:12px;
+    text-align:left;
+}
+
+.programme-table td{
+    border:1px solid #ddd;
+    padding:14px;
+    vertical-align:top;
+}
+
+.programme-table ul{
+    margin:0;
+    padding-left:20px;
+}
+
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:2rem;
+}
+
+.course-grid ul{
+    margin:0;
+    padding-left:20px;
+}
