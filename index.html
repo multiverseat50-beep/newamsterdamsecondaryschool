@@ -181,6 +181,145 @@
             min-height: 900px;
         }
     }
+
+    /* =========================================
+       NAMS NEWS TICKER / ANNOUNCEMENT CRAWL
+    ========================================= */
+    .nams-news-ticker {
+        width: 100%;
+        min-height: 48px;
+        display: flex;
+        align-items: stretch;
+        overflow: hidden;
+        background: #2d074b;
+        border-bottom: 3px solid #d4af37;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.22);
+        position: relative;
+        z-index: 10000;
+    }
+
+    .nams-news-label {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-width: 150px;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #d4af37, #f3d87a);
+        color: #2d074b;
+        font-size: 0.95rem;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2;
+        box-shadow: 5px 0 12px rgba(0, 0, 0, 0.18);
+    }
+
+    .nams-news-label::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -18px;
+        width: 36px;
+        height: 100%;
+        background: inherit;
+        transform: skewX(-18deg);
+        z-index: -1;
+    }
+
+    .nams-news-window {
+        flex: 1 1 auto;
+        min-width: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .nams-news-track {
+        display: inline-flex;
+        align-items: center;
+        width: max-content;
+        padding-left: 100%;
+        animation: namsTickerScroll 24s linear infinite;
+        will-change: transform;
+    }
+
+    .nams-news-message {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0 42px;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        text-decoration: none;
+    }
+
+    .nams-news-message strong {
+        color: #f3d87a;
+        font-weight: 900;
+    }
+
+    .nams-news-message:hover,
+    .nams-news-message:focus {
+        color: #ffffff;
+        text-decoration: underline;
+        text-decoration-color: #f3d87a;
+        text-underline-offset: 4px;
+    }
+
+    .nams-news-ticker:hover .nams-news-track,
+    .nams-news-ticker:focus-within .nams-news-track {
+        animation-play-state: paused;
+    }
+
+    @keyframes namsTickerScroll {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    @media (max-width: 700px) {
+        .nams-news-ticker {
+            min-height: 44px;
+        }
+
+        .nams-news-label {
+            min-width: 112px;
+            padding: 9px 12px;
+            font-size: 0.76rem;
+            letter-spacing: 0.035em;
+        }
+
+        .nams-news-message {
+            padding: 0 28px;
+            font-size: 0.9rem;
+        }
+
+        .nams-news-track {
+            animation-duration: 20s;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .nams-news-window {
+            overflow-x: auto;
+        }
+
+        .nams-news-track {
+            padding-left: 20px;
+            animation: none;
+        }
+    }
+
 </style>
 
 </head>
@@ -199,6 +338,44 @@
     >
         Skip to content
     </a>
+
+
+    <!-- NAMS NEWS TICKER -->
+    <div
+        class="nams-news-ticker"
+        role="region"
+        aria-label="Important school announcement"
+    >
+        <div class="nams-news-label">
+            <span aria-hidden="true">🔔</span>
+            NAMS News
+        </div>
+
+        <div class="nams-news-window">
+            <div class="nams-news-track">
+                <a
+                    class="nams-news-message"
+                    href="grade7-admissions.html"
+                    aria-label="Grade 7 Orientation Exercise on Wednesday, August 26, 2026 at 9:00 AM. Open Grade 7 information."
+                >
+                    <span aria-hidden="true">🎓</span>
+                    <strong>NEW GRADE 7 STUDENTS:</strong>
+                    Orientation Exercise
+                    <span aria-hidden="true">•</span>
+                    Wednesday, August 26, 2026
+                    <span aria-hidden="true">•</span>
+                    9:00 AM
+                    <span aria-hidden="true">•</span>
+                    New Amsterdam Secondary School
+                    <span aria-hidden="true">•</span>
+                    Discover the MultiVerse of Opportunities
+                    <span aria-hidden="true">💜💛</span>
+                    <strong>CLICK FOR DETAILS →</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+
 
     <!-- TOP INFORMATION BAR -->
 
