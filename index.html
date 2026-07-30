@@ -52,7 +52,7 @@
     "addressCountry": "GY"
   },
   "sameAs": [
-    "https://www.facebook.com/share/1CCUkj4T9d/"
+    "https://www.facebook.com/profile.php?id=100063543164388"
   ],
   "knowsAbout": [
     "Secondary Education",
@@ -66,9 +66,132 @@
   ]
 }
 </script>
+
+<style>
+    /* About + Facebook feature row */
+    .about-facebook-section {
+        background: #f7f4fa;
+        padding: 72px 20px 34px;
+    }
+
+    .about-facebook-grid {
+        display: grid;
+        grid-template-columns: minmax(280px, 0.72fr) minmax(560px, 1.68fr);
+        gap: 44px;
+        align-items: start;
+    }
+
+    .about-facebook-copy .section-head {
+        margin-bottom: 18px;
+    }
+
+    .about-facebook-copy > p {
+        margin-bottom: 26px;
+    }
+
+    .facebook-panel {
+        background: #ffffff;
+        border: 1px solid rgba(76, 29, 109, 0.14);
+        border-radius: 20px;
+        box-shadow: 0 16px 38px rgba(43, 18, 61, 0.13);
+        padding: 22px;
+        min-width: 0;
+    }
+
+    .facebook-panel-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 18px;
+    }
+
+    .facebook-panel-head h2 {
+        margin: 0;
+        color: var(--purple-dark);
+        font-size: clamp(1.25rem, 2vw, 1.65rem);
+    }
+
+    .facebook-panel-head .btn {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 12px 18px;
+    }
+
+    .facebook-feed-wrap {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 14px;
+        min-height: 900px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .facebook-feed-wrap .fb-page,
+    .facebook-feed-wrap iframe {
+        max-width: 100% !important;
+    }
+
+    .quick-after-social {
+        background: #f7f4fa;
+        padding: 0 20px 66px;
+    }
+
+    .quick-after-social .quick {
+        margin-top: 0;
+    }
+
+    @media (max-width: 980px) {
+        .about-facebook-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .facebook-panel {
+            max-width: 760px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .about-facebook-section {
+            padding: 50px 12px 24px;
+        }
+
+        .quick-after-social {
+            padding: 0 12px 48px;
+        }
+
+        .facebook-panel {
+            padding: 14px;
+            border-radius: 15px;
+        }
+
+        .facebook-panel-head {
+            display: block;
+        }
+
+        .facebook-panel-head .btn {
+            display: inline-flex;
+            margin-top: 12px;
+        }
+
+        .facebook-feed-wrap {
+            min-height: 900px;
+        }
+    }
+</style>
+
 </head>
 
 <body>
+
+    <!-- FACEBOOK PAGE PLUGIN -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v23.0">
+    </script>
 
     <a
         class="skip"
@@ -296,71 +419,13 @@
 
         </section>
 
-        <!-- QUICK LINKS -->
+        <!-- ABOUT + LATEST FACEBOOK UPDATES -->
 
-        <div class="container quick">
+        <section class="about-facebook-section">
 
-            <div class="quick-grid">
+            <div class="container about-facebook-grid">
 
-                <a href="grade7-admissions.html">
-
-                    <strong>
-                        Grade 7 Admissions
-                    </strong>
-
-                    <span>
-                        Registration information for new students
-                    </span>
-
-                </a>
-
-                <a href="cape-admissions.html">
-
-                    <strong>
-                        CAPE Admissions
-                    </strong>
-
-                    <span>
-                        Programmes, requirements and online application
-                    </span>
-
-                </a>
-
-                <a href="resources.html">
-
-                    <strong>
-                        Teacher Resources
-                    </strong>
-
-                    <span>
-                        Forms, documents, systems and professional resources
-                    </span>
-
-                </a>
-
-                <a href="contact.html">
-
-                    <strong>
-                        Contact Us
-                    </strong>
-
-                    <span>
-                        Reach the school administration
-                    </span>
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- ABOUT SECTION -->
-
-        <section>
-
-            <div class="container grid-2">
-
-                <div>
+                <div class="about-facebook-copy">
 
                     <div class="section-head left">
 
@@ -376,20 +441,19 @@
                         </h2>
 
                         <p>
-                            We provide a broad secondary education
-                            supported by academic, technical, vocational,
-                            leadership and co-curricular opportunities.
+                            We provide a broad secondary education supported by
+                            academic, technical, vocational, leadership and
+                            co-curricular opportunities.
                         </p>
 
                     </div>
 
                     <p>
-                        Our students are encouraged to think critically,
-                        work collaboratively, serve responsibly and pursue
-                        excellence in every field. Through CSEC, CAPE, CVQ
-                        and CCSLC pathways, learners can build strong
-                        foundations for further education, employment and
-                        entrepreneurship.
+                        Our students are encouraged to think critically, work
+                        collaboratively, serve responsibly and pursue excellence
+                        in every field. Through CSEC, CAPE, CVQ and CCSLC pathways,
+                        learners build strong foundations for further education,
+                        employment and entrepreneurship.
                     </p>
 
                     <a
@@ -401,33 +465,119 @@
 
                 </div>
 
-                <div class="card accent-card">
+                <div class="facebook-panel">
 
-                    <h3>
-                        Our School Motto
-                    </h3>
+                    <div class="facebook-panel-head">
 
-                    <p
-                        style="
-                            font-size: 1.55rem;
-                            color: var(--purple-dark);
-                            font-weight: 900;
-                        "
-                    >
-                        Progress Through Co-Operation
-                    </p>
+                        <h2>
+                            Latest Updates From Our Facebook Page
+                        </h2>
 
-                    <p>
-                        Our school community grows through teamwork
-                        among students, staff, parents, alumni,
-                        partners and the wider community.
-                    </p>
+                        <a
+                            class="btn btn-purple"
+                            href="https://www.facebook.com/profile.php?id=100063543164388"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Visit Our Facebook Page
+                        </a>
+
+                    </div>
+
+                    <div class="facebook-feed-wrap">
+
+                        <div
+                            class="fb-page"
+                            data-href="https://www.facebook.com/profile.php?id=100063543164388"
+                            data-tabs="timeline"
+                            data-width="700"
+                            data-height="900"
+                            data-small-header="true"
+                            data-adapt-container-width="true"
+                            data-hide-cover="true"
+                            data-show-facepile="false"
+                        >
+
+                            <blockquote
+                                cite="https://www.facebook.com/profile.php?id=100063543164388"
+                                class="fb-xfbml-parse-ignore"
+                            >
+                                <a href="https://www.facebook.com/profile.php?id=100063543164388">
+                                    New Amsterdam Secondary School on Facebook
+                                </a>
+                            </blockquote>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
 
         </section>
+
+        <!-- QUICK LINKS -->
+
+        <div class="quick-after-social">
+
+            <div class="container quick">
+
+                <div class="quick-grid">
+
+                    <a href="grade7-admissions.html">
+
+                        <strong>
+                            Grade 7 Admissions
+                        </strong>
+
+                        <span>
+                            Registration information for new students
+                        </span>
+
+                    </a>
+
+                    <a href="cape-admissions.html">
+
+                        <strong>
+                            CAPE Admissions
+                        </strong>
+
+                        <span>
+                            Programmes, requirements and online application
+                        </span>
+
+                    </a>
+
+                    <a href="resources.html">
+
+                        <strong>
+                            Teacher Resources
+                        </strong>
+
+                        <span>
+                            Forms, documents, systems and professional resources
+                        </span>
+
+                    </a>
+
+                    <a href="contact.html">
+
+                        <strong>
+                            Contact Us
+                        </strong>
+
+                        <span>
+                            Reach the school administration
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
 
         <!-- ACADEMIC PATHWAYS -->
 
@@ -728,7 +878,6 @@
             </div>
 
         </section>
-
     </main>
 
     <!-- FOOTER -->
