@@ -196,6 +196,8 @@
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.22);
         position: relative;
         z-index: 10000;
+        cursor: default;
+        user-select: none;
     }
 
     .nams-news-label {
@@ -236,6 +238,7 @@
         display: flex;
         align-items: center;
         white-space: nowrap;
+        pointer-events: none;
     }
 
     .nams-news-track {
@@ -256,7 +259,6 @@
         font-size: 1rem;
         font-weight: 700;
         letter-spacing: 0.01em;
-        text-decoration: none;
     }
 
     .nams-news-message strong {
@@ -264,16 +266,7 @@
         font-weight: 900;
     }
 
-    .nams-news-message:hover,
-    .nams-news-message:focus {
-        color: #ffffff;
-        text-decoration: underline;
-        text-decoration-color: #f3d87a;
-        text-underline-offset: 4px;
-    }
-
-    .nams-news-ticker:hover .nams-news-track,
-    .nams-news-ticker:focus-within .nams-news-track {
+    .nams-news-ticker:hover .nams-news-track {
         animation-play-state: paused;
     }
 
@@ -353,11 +346,7 @@
 
         <div class="nams-news-window">
             <div class="nams-news-track">
-                <a
-                    class="nams-news-message"
-                    href="grade7-admissions.html"
-                    aria-label="Grade 7 Orientation Exercise on Wednesday, August 26, 2026 at 9:00 AM. Open Grade 7 information."
-                >
+                <div class="nams-news-message">
                     <span aria-hidden="true">🎓</span>
                     <strong>NEW GRADE 7 STUDENTS:</strong>
                     Orientation Exercise
@@ -370,8 +359,8 @@
                     <span aria-hidden="true">•</span>
                     Discover the MultiVerse of Opportunities
                     <span aria-hidden="true">💜💛</span>
-                    <strong>CLICK FOR DETAILS →</strong>
-                </a>
+                    <strong>WELCOME TO NAMS!</strong>
+                </div>
             </div>
         </div>
     </div>
