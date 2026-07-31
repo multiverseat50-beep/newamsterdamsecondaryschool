@@ -227,11 +227,30 @@
         columns: 1;
       }
     }
-  </style>
+  
+
+    /* NAMS NEWS TICKER */
+    .nams-news-ticker{width:100%;min-height:48px;display:flex;align-items:stretch;overflow:hidden;background:#2d074b;border-bottom:3px solid #d4af37;box-shadow:0 3px 10px rgba(0,0,0,.22);position:relative;z-index:10000}
+    .nams-news-label{flex:0 0 auto;display:flex;align-items:center;justify-content:center;gap:8px;min-width:150px;padding:10px 20px;background:linear-gradient(135deg,#d4af37,#f3d87a);color:#2d074b;font-weight:900;text-transform:uppercase;position:relative}
+    .nams-news-label:after{content:"";position:absolute;top:0;right:-18px;width:36px;height:100%;background:inherit;transform:skewX(-18deg)}
+    .nams-news-window{flex:1;overflow:hidden;display:flex;align-items:center;white-space:nowrap}
+    .nams-news-track{display:inline-flex;align-items:center;width:max-content;padding-left:100%;animation:namsTickerScroll 24s linear infinite}
+    .nams-news-message{display:inline-flex;gap:12px;padding:0 42px;color:#fff;font-weight:700}
+    .nams-news-message strong{color:#f3d87a}
+    .nams-news-ticker:hover .nams-news-track{animation-play-state:paused}
+    @keyframes namsTickerScroll{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+
+</style>
 </head>
 
 <body>
   <a class="skip" href="#main">Skip to content</a>
+
+  
+  <div class="nams-news-ticker">
+    <div class="nams-news-label">🔔 NAMS News</div>
+    <div class="nams-news-window"><div class="nams-news-track"><div class="nams-news-message"><strong>NEW GRADE 7 STUDENTS:</strong> Orientation Exercise • Wednesday, August 26, 2026 • 9:00 AM • New Amsterdam Secondary School • Discover the MultiVerse of Opportunities 💜💛</div></div></div>
+  </div>
 
   <div class="utility">
     <div class="container">
